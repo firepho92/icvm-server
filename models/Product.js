@@ -12,7 +12,7 @@ module.exports = class Product {
 
   createProduct() {
     return new Promise((resolve, reject) => {
-      connection.query('INSERT INTO beers SET ?', {name: this.name, quantity: this.quantity}, (error, results, fields) => {
+      connection.query('INSERT INTO Beers SET ?', {name: this.name, quantity: this.quantity}, (error, results, fields) => {
         if(error) throw error;
         resolve(results);
       });
@@ -21,7 +21,7 @@ module.exports = class Product {
 
   readProducts() {
     return new Promise((resolve, reject) => {
-      connection.query('SELECT id, name, quantity FROM beers', (error, results, fields) => {
+      connection.query('SELECT id, name, quantity FROM Beers', (error, results, fields) => {
         if(error) throw error;
         resolve(results);
       });
