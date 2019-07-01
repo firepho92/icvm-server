@@ -1,4 +1,4 @@
-'use strict'
+
 
 var DB = require('../config/configDB.js');
 var db = new DB();
