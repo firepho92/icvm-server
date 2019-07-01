@@ -6,7 +6,7 @@
     "main": "index.js",
     "scripts": {
         "test": "grunt test",
-        "build": "grunt build",
+        "build": "grunt build --force",
         "all": "npm run build && npm run test"
     },
     "dependencies": {
