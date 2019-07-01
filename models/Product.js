@@ -30,7 +30,7 @@ module.exports = class Product {
 
   updateProduct(id) {
     return new Promise((resolve, reject) => {
-      connection.query('Update beers SET quantity = ? WHERE id = ?', [this.quantity, id], (error, results, fields) => {
+      connection.query('Update Beers SET quantity = ? WHERE id = ?', [this.quantity, id], (error, results, fields) => {
         if(error) throw error;
         resolve(results);
       });
