@@ -5,7 +5,6 @@
     "author": "Alex Aguilar",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon server.js",
         "test": "grunt test",
         "build": "grunt build",
         "all": "npm run build && npm run test"
@@ -16,8 +15,7 @@
         "eslint": "^1.10.3",
         "express": "^4.12.2",
         "kraken-js": "^2.0.0",
-        "mysql": "^2.17.1",
-        "nodemon": "^1.19.1"
+        "mysql": "^2.17.1"
     },
     "devDependencies": {
         "grunt": "^0.4.5",
