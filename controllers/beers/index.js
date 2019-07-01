@@ -1,7 +1,7 @@
 'use strict'
 var Product = require('../../models/Product.js');
 
-module.exports = (router) => {
+module.exports = function(router) {
 
   router.get('/', async(req, res) => {
     var product = new Product();
