@@ -28,9 +28,9 @@ module.exports = class Product {
     });
   }
 
-  updateProduct(id) {
+  updateProduct(quantity, id) {
     return new Promise((resolve, reject) => {
-      connection.query('Update Beers SET quantity = ? WHERE id = ?', [this.quantity, id], (error, results, fields) => {
+      connection.query('Update Beers SET quantity = quantity - ? WHERE id = ?', [quantity, id], (error, results, fields) => {
         if(error) throw error;
         resolve(results);
       });

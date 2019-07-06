@@ -4,10 +4,10 @@ var mysql = require('mysql');
 class Database {
   constructor(){
     this.credentials = {
-      host: 'remotemysql.com',
-      user: 'ZCLAKUbPWV',
-      password: 'cuDdQKyxNB',
-      database: 'ZCLAKUbPWV'
+      host: 'localhost',
+      user: 'root',
+      password: 'auza940220',
+      database: 'icvm'
     }
   }
 
@@ -18,3 +18,5 @@ class Database {
 }
 
 module.exports = Database;
+//ZCLAKUbPWV
+//cuDdQKyxNB
