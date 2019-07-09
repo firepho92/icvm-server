@@ -4,7 +4,7 @@ var mysql = require('mysql');
 class Database {
   constructor(){
     this.credentials = {
-      host: 'localhost',
+      host: 'remotemysql.com',
       user: 'ZCLAKUbPWV',
       password: 'cuDdQKyxNB',
       database: 'ZCLAKUbPWV'
