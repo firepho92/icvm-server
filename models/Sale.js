@@ -31,7 +31,7 @@ module.exports = class Sale {
 
   createMultipleSales(sales) {
     return new Promise((resolve, reject) => {
-      connection.query('INSERT INTO Sales SET ?', [sales], (error, results, fields) => {
+      connection.query('INSERT INTO Sales(date, beer, quantity) VALUES ?', [sales], (error, results, fields) => {
         if(error) throw error;
         resolve(results);
       });

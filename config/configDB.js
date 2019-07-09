@@ -5,9 +5,9 @@ class Database {
   constructor(){
     this.credentials = {
       host: 'localhost',
-      user: 'root',
-      password: 'auza940220',
-      database: 'icvm'
+      user: 'ZCLAKUbPWV',
+      password: 'cuDdQKyxNB',
+      database: 'ZCLAKUbPWV'
     }
   }
 

@@ -16,8 +16,8 @@ module.exports = function(router) {
   });
   
   router.put('/' , async function(req, res) {
-    var product = new Product(req.body.name, req.body.quantity);
-    product = await product.updateProduct(req.body.id);
+    var product = new Product();
+    product = await product.updateProduct(req.body.id, req.body.quantity);
     res.send(product);
   });
 }
