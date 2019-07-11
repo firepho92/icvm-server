@@ -15,7 +15,7 @@ module.exports = function(router) {
     if(req.body.sales !== undefined) {
       var sales = req.body.sales.map(sale => {
         if(sale.beer !== undefined) {
-          return [new Date(), sale.beer, sale.quantity]
+          return [sale.date, sale.beer, sale.quantity]
         }
       });
       console.log(sales);
